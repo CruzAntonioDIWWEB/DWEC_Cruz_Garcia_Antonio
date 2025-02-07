@@ -1,0 +1,11 @@
+/*Si se cumplen las restricciones según la validación nativa*/
+input:valid{
+    background-color: rgb(184, 239, 184);
+    border-color: green;
+}
+
+/*No cumplen las restricciones según la validación nativa*/
+input:invalid{
+    background-color: rgb(230, 171, 171);
+    border-color: red;
+}

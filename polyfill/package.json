@@ -1,0 +1,55 @@
+{
+  "name": "polyfills.js",
+  "version": "1.0.0",
+  "main": "polyfills.js",
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "bluebird": "^3.7.2",
+    "catharsis": "^0.9.0",
+    "entities": "^4.5.0",
+    "escape-string-regexp": "^2.0.0",
+    "graceful-fs": "^4.2.11",
+    "js2xmlparser": "^4.0.2",
+    "jsdoc": "^4.0.4",
+    "klaw": "^3.0.0",
+    "linkify-it": "^5.0.0",
+    "lodash": "^4.17.21",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^8.6.7",
+    "marked": "^4.3.0",
+    "mdurl": "^2.0.0",
+    "mkdirp": "^1.0.4",
+    "punycode.js": "^2.3.1",
+    "requizzle": "^0.2.4",
+    "strip-json-comments": "^3.1.1",
+    "uc.micro": "^2.1.0",
+    "underscore": "^1.13.7",
+    "xmlcreate": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "core-js": "^3.40.0",
+    "cross-env": "^7.0.3",
+    "npm-run-all": "^4.1.5",
+    "regenerator-runtime": "^0.14.1",
+    "rimraf": "^6.0.1",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-merge": "^6.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "antiguo": "webpack --config webpack.legacy.js --mode $variable",
+    "moderno": "webpack --config webpack.modern.js --mode $variable",
+    "des": "cross-env variable=development npm-run-all --serial compilar:antiguo compilar:moderno",
+    "prod": "cross-env variable=production npm-run-all --serial compilar:antiguo compilar:moderno",
+    "limpia": "rimraf compilado",
+    "todo": "run-s limpia des"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+
+}

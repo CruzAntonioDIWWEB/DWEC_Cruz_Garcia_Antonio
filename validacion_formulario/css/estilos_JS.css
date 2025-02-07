@@ -1,0 +1,24 @@
+/*Si se cumplen las restricciones según la validación nativa*/
+.valido{
+    background-color: rgb(184, 239, 184);
+    border-color: green;
+}
+
+/*No cumplen las restricciones según la validación nativa*/
+.no-valido{
+    background-color: rgb(230, 171, 171);
+    border-color: red;
+}
+
+.no-valido:focus{
+    font-size: 20px;
+}
+
+.oculto{
+    display: none; /* o visibility: hidden */
+}
+
+.error{
+    font-size: 0.75rem;
+    color: red;
+}
