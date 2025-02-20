@@ -1,0 +1,13 @@
+{
+  "name": "documentacion",
+  "version": "1.0.0",
+  "main": "script_error_handling.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "doc": "jsdoc script_error_handling.js -d docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
