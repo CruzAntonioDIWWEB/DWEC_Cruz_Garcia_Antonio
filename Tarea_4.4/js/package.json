@@ -1,0 +1,12 @@
+{
+  "name": "modularidad",
+  "version": "1.0.0",
+  "main": "funciones.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "antonio",
+  "license": "ISC",
+  "description": ""
+}
