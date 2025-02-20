@@ -1,0 +1,253 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilos para el header */
+header {
+    background-color: #4CAF50; /* Color de fondo del header */
+    padding: 10px 20px; /* Espaciado interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos para la navegación */
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Disposición flexible para alinear los elementos en línea */
+    justify-content: center; /* Centra los elementos del menú */
+}
+
+nav ul li {
+    margin-right: 20px; /* Espacio entre elementos del menú */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+/* Estilos para los enlaces */
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; /* Color del texto */
+    font-size: 16px; /* Tamaño de la fuente */
+    padding: 8px 12px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+/* Efecto hover para los enlaces */
+nav ul li a:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Estilos para pantallas pequeñas (responsive) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambia la disposición a columna en pantallas pequeñas */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Elimina el margen derecho */
+        margin-bottom: 10px; /* Añade margen inferior para separar los elementos */
+    }
+}
+
+/* Estilos para el contenedor del formulario */
+#contenedor_formulario {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0; /* Espaciado vertical */
+}
+
+/* Estilos para el título del formulario */
+#contenedor_formulario h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los formularios */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="submit"],
+input[type="checkbox"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilos para las asignaturas */
+#matriculacion-form div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#matriculacion-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#matriculacion-form label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+/* Estilos para el mensaje de no hay asignaturas */
+#matriculacion-form p {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
+
+/* Estilos para el botón de matricular */
+#matriculacion-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#matriculacion-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el contenedor de la lista de alumnos */
+#contenedor_listaAlumnos {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Estilos para el título de la lista de alumnos */
+#contenedor_listaAlumnos h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Estilos para la tabla principal */
+#tabla_alumnos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las celdas del encabezado */
+#tabla_alumnos th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Estilos para las celdas del cuerpo */
+#tabla_alumnos td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Estilos para las filas impares */
+#tabla_alumnos tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para las filas al pasar el mouse */
+#tabla_alumnos tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilos para la subtabla de calificaciones */
+#tabla_alumnos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+#tabla_alumnos table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Estilos para el botón de eliminar */
+#tabla_alumnos button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#tabla_alumnos button:hover {
+    background-color: #d32f2f;
+}
+
+/* Estilos para las celdas de la subtabla */
+#tabla_alumnos table td {
+    background-color: #fff;
+}
