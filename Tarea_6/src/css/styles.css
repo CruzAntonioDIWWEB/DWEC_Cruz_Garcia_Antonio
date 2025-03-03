@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../../node_modules/flowbite";
+
+/* Estilos personalizados para el efecto de giro en 3D */
+.group:hover .group-hover\:\[transform\:rotateY\(180deg\)\] {
+    transform: rotateY(180deg);
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .\[backface-visibility\:hidden\] {
+    backface-visibility: hidden;
+  }
+  
+  .\[transform\:rotateY\(180deg\)\] {
+    transform: rotateY(180deg);
+  }
+  
+  .\[transform-style\:preserve-3d\] {
+    transform-style: preserve-3d;
+  }
+  
+  /* Animación de carga para nuevas tarjetas */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  #sectionCards > div {
+    animation: fadeIn 0.5s ease-out;
+  }

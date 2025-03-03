@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            transitionProperty: {
+              'height': 'height',
+              'spacing': 'margin, padding',
+            }
+          }
+        }
+      }
+    </script>
+    <title>Galería de Álbumes</title>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg">
+      <nav class="container mx-auto px-6 py-4">
+        <section class="flex justify-between items-center">
+          <!-- Logo a la izquierda -->
+          <figure>
+            <a href="./index.html" class="text-white hover:text-gray-200 font-semibold text-lg transition duration-300 ease-in-out transform hover:scale-105">
+              <img src="public/logotipo.jpg" alt="Logo" class="h-10"> <!-- Ajusta la ruta y el tamaño del logo según necesites -->
+            </a>
+          </figure>
+    
+          <!-- Enlaces a la derecha -->
+          <ul class="flex space-x-6">
+            <li>
+              <a href="./index.html" class="text-white hover:text-gray-200 font-semibold text-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Vanilla
+              </a>
+            </li>
+            <li>
+              <a href="./jquery.html" class="text-white hover:text-gray-200 font-semibold text-lg transition duration-300 ease-in-out transform hover:scale-105">
+                JQuery
+              </a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <main class="flex flex-col items-center justify-start min-h-screen pt-20">
+    </main>
+    <footer class="bg-gray-900 text-white py-6">
+      <section class="container mx-auto text-center">
+        <p class="text-sm">&copy; 2025 Mi Galería. Todos los derechos reservados.</p>
+        <p class="text-sm">Desarrollado con ❤️ usando TailwindCSS</p>
+      </section>
+    </footer>
+    <script src="./src/js/main.js" defer></script>
+  </body>
+</html>
