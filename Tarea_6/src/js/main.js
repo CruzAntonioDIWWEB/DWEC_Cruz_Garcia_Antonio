@@ -85,7 +85,7 @@ async function construirHTML(startIndex, endIndex) {
 let currentIndex = 0;
 const batchSize = 12;
 
-function loadMoreItems() {
+function infiniteScroll() {
    const nextIndex = currentIndex + batchSize;
    construirHTML(currentIndex, nextIndex);
 }
@@ -95,13 +95,13 @@ window.addEventListener('scroll', () => {
    const contentTooShort = document.body.offsetHeight < window.innerHeight;
 
    if (nearBottom || contentTooShort) {
-      loadMoreItems();
+      infiniteScroll();
    }
 });
 
 window.addEventListener('load', () => {
    if (document.body.offsetHeight < window.innerHeight) {
-      loadMoreItems();
+      infiniteScroll();
    }
 });
 
